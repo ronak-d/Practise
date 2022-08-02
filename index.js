@@ -8,9 +8,10 @@ import ReactDOM from 'react-dom'; //only maintains elements to perform dom manup
 
 // FORMAT = React.createElement("element to create", {className:"classname"}, "input of an element");
 // Render means to SHOW/DRAW something.
-ReactDOM.render(    //elements to peform dom manupulation and show element[what] | and [where].
+
+ReactDOM.render(    //elements to peform dom manupulation and show element[what to show] | and [where to show/draw].
     p, // [what]
-    
+    document.getElementById("root") //[where].
 )
 
 const p = React.createElement(
