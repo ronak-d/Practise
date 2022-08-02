@@ -15,7 +15,7 @@ ReactDOM.render(    //elements to peform dom manupulation and show element[what 
 )
 
 const p = React.createElement(
-    "p",
+    "p", 
     {className:"pEle", id:"uuvid"},
     "Ronak Dodeja"
 )

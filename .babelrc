@@ -1,3 +1,8 @@
+// babel is just an js library to convert new js version code to convert 
+// them into the older versions of js code to make it compatible to the old browsers.
 {
     "presets": ["@babel/env", "@babel/react"]
 }
+
+
+// start at 1:30
