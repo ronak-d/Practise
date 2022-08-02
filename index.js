@@ -16,7 +16,7 @@ ReactDOM.render(    //elements to peform dom manupulation and show element[what 
 
 const p = React.createElement(
     "p",
-    {className:"pEle"},
+    {className:"pEle", id:"uuvid"},
     "Ronak Dodeja"
 )
 
@@ -26,3 +26,4 @@ const h1 = React.createElement(
     "heelo react"
 )
 
+//  jsx is an extended version of html
