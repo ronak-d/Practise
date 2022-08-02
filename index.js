@@ -1,4 +1,4 @@
-import React from 'react';        //Just imports react from react to form elemnts;
+import React from 'react';        //Just imports react from react to form HTML elemnts;
 import ReactDOM from 'react-dom'; //only maintains elements to perform dom manupilation;
 
 // both are very different react and react dom;
@@ -7,7 +7,11 @@ import ReactDOM from 'react-dom'; //only maintains elements to perform dom manup
 // then in console heelo react should come inside p element;
 
 // FORMAT = React.createElement("element to create", {className:"classname"}, "input of an element");
-
+// Render means to SHOW/DRAW something.
+ReactDOM.render(    //elements to peform dom manupulation and show element[what] | and [where].
+    p, // [what]
+    
+)
 
 const p = React.createElement(
     "p",
