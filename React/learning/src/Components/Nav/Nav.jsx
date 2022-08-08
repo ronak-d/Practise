@@ -1,9 +1,16 @@
 import React from 'react';
-// import styles from "./Nav.module.css";
+import styles from "./Nav.module.css";
 
 
 const Nav = () => {
   const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13];
+  const arr2 = [
+    {
+      img:"https://media-exp1.licdn.com/dms/image/C4D03AQGgWT43R3THLg/profile-displayphoto-shrink_100_100/0/1653128642557?e=1665619200&v=beta&t=4MYvSZVOl-vdg8fUOjCdJBXCcl1kAqBWmOhLYwn5u7A",
+      name:"Ronak",
+      sirname:"Dodeja"
+    }
+  ];
 
   return (
     <div>
@@ -21,8 +28,18 @@ const Nav = () => {
       {/* syntactically right */}
 
       {arr.map((e)=>(//html -> js -> html
-        <div>       
+        <div className={ e % 2 == 0? styles.even : styles.odd}>       
           {e}
+        </div>
+      ))}
+
+      {/* how to map an object in react */}
+      {/* using Dot (.)  Notation*/}
+      {/* using bracket notaion, it can be used when there is Hyphen in the string of the data */}
+      {arr2.map((e)=>(
+        <div>
+          <img src={e.img}/>
+          <div>{`${e.name} ${e.sirname}`}</div>
         </div>
       ))}
 
