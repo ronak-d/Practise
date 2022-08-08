@@ -1,4 +1,5 @@
 import React from 'react';
+import REimgs from '../REimgs/REimgs';
 import styles from "./Nav.module.css";
 
 
@@ -15,11 +16,11 @@ const Nav = () => {
   return (
     <div>
       {/* To iterate over an array we have to use {} brackets.*/}
-      {/* and to write Js in react we use {} also */}
-{/* 
-      // syntactically wrong.
+      {/* and to write Js in react we use {} also */}    
 
-      {arr.map((e)=>(
+      {/* // syntactically wrong. */}
+
+      {/*{arr.map((e)=>(
         <div>
           {e}
         </div>
@@ -33,13 +34,17 @@ const Nav = () => {
         </div>
       ))}
 
-      {/* how to map an object in react */}
       {/* using Dot (.)  Notation*/}
       {/* using bracket notaion, it can be used when there is Hyphen in the string of the data */}
+
+      {/* how to map an object in react */}
       {arr2.map((e)=>(
         <div>
-          <img src={e.img}/>
-          <div>{`${e.name} ${e.sirname}`}</div>
+          {/* passing props and ddata to dynamic function call */}
+          <REimgs image={e.img} title={e.name} title2={e.sirname}/> 
+
+          {/* <img src={e.img}/>
+          <div>{`${e.name} ${e.sirname}`}</div> */}
         </div>
       ))}
 
