@@ -11,10 +11,15 @@ const Nav = () => {
       {/* and to write Js in react we use {} also */}
 
       {array.map((e) => {
-        <div>{el}</div>
+        <div className={ e % 2 === 0? styles.seven : styles.odd }>{el}</div>
       })}
     </div>
   )
 }
 
 export default Nav;
+
+/* 
+-Condition-
+if Div element is even no. show the number or background green else red okay.
+*/
