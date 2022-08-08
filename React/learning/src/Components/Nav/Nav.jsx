@@ -1,19 +1,33 @@
 import React from 'react';
-import styles from "./Nav.module.css";
+// import styles from "./Nav.module.css";
 
-const array = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
 const Nav = () => {
+  const arr = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 
   return (
     <div>
       {/* To iterate over an array we have to use {} brackets.*/}
       {/* and to write Js in react we use {} also */}
+{/* 
+      // syntactically wrong.
 
-      {array.map((e) => {
-        <div className={ e % 2 === 0? styles.seven : styles.odd }>{el}</div>
-      })}
+      {arr.map((e)=>(
+        <div>
+          {e}
+        </div>
+      ))} */}
+
+      {/* syntactically right */}
+
+      {arr.map((e)=>(//html -> js -> html
+        <div>       
+          {e}
+        </div>
+      ))}
+
     </div>
+
   )
 }
 
