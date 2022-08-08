@@ -40,14 +40,12 @@ const Nav = () => {
       {/* how to map an object in react */}
       {arr2.map((e)=>(
         <div>
-          {/* passing props and ddata to dynamic function call */}
+          {/* passing props and data to dynamic function call */}
           <REimgs image={e.img} title={e.name} title2={e.sirname}/> 
-
           {/* <img src={e.img}/>
           <div>{`${e.name} ${e.sirname}`}</div> */}
         </div>
       ))}
-
     </div>
 
   )
