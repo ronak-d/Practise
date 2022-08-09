@@ -17,6 +17,10 @@ function App() {
   );
 }
 
+// Sending call back function as a props from app to child function;
+// to receive the data from child to parent.
+// always remeber to make it destructure to functions which is passes in the props.
+
 let Child = ({callbackFun})=>{
 
   let childname = "ronak";
@@ -25,7 +29,6 @@ let Child = ({callbackFun})=>{
   return(
     <p>child function sends name to parent "app" function</p>
   )
-
 }
 
 export default App;
