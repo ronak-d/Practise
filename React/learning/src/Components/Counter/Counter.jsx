@@ -20,7 +20,7 @@ const Counter = () => {
   const handleOperation = (operation) => {
     //   count=10 ? "reached" : setCount(count-1);
     //   count=0 ? "reached" : setCount(count+1);
-      setCount(count + operation);
+    setCount(count + operation);
   }
   return (
     <div>

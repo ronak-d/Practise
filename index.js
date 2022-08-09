@@ -27,3 +27,20 @@ const h1 = React.createElement(
 )
 
 //  jsx is an extended version of html
+
+
+// just an experiment to test functions 
+// passing child function vslue to the parent function app;
+
+// parent function;
+function app() {
+    let printname = (value)=>{
+        console.log(value + "is in parent");
+    }
+    return child(printname);
+}
+// passing child function vslue to the parent function app;
+function child() {
+    let childname = "ronak";
+    printname(childname);
+}
