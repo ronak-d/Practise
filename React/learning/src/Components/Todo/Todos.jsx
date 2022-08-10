@@ -4,7 +4,7 @@ import TodoInput from './TodoInput'
 
 const Todos = () => {
 
-    const [TodoList, setTodoList] = useState(["learning react"]);
+    const [TodoList, setTodoList] = useState([]);
 
     // Callback function to get the single todo from the chile(todoinput);
     const Alltodos = ((newtodo) => {
@@ -14,7 +14,8 @@ const Todos = () => {
 
         const payload = {
             title:newtodo,
-            status:false
+            status:false,
+            id:nanoid(5) // means used 5 letter random id to found particular elemnt to perform any operation.
         }
 
         console.log(payload);
@@ -29,7 +30,7 @@ const Todos = () => {
         <TodoInput Alltodos={Alltodos}/>
 
         {TodoList.map( (e)=> 
-            <TododItem todo={e}/>
+            <TododItem todo={e}/> // this todo={e} has {title:learning react, status:false}
         )}
     </div>
   )
