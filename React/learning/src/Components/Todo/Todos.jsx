@@ -1,8 +1,11 @@
 import React from 'react'
+import TodoInput from './TodoInput'
 
 const Todos = () => {
   return (
-    <div>Todos</div>
+    <div>
+        <TodoInput/>
+    </div>
   )
 }
 
