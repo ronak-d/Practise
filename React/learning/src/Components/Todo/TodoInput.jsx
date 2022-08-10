@@ -4,14 +4,14 @@ import React, { useState } from 'react'
 // Input here means that what kind of html format required in the todo application;
 
 
-const TodoInput = () => {
+const TodoInput = ({Alltodos}) => {
 
-    [SingleTodo, setSingleTodo] = useState("");
+  const [Todo,setTodo] = useState("");
 
   return (
     <div>
-        <input type="text" />
-        <button>Add Todo</button>
+        <input onChange={(e)=>{setTodo(e.target.value)}} type="text" />
+        <button onClick={()=>Alltodos(Todo)}>Add Todo</button>
     </div>
   )
 }

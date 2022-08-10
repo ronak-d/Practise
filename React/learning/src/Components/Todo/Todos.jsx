@@ -3,17 +3,25 @@ import TodoInput from './TodoInput'
 
 const Todos = () => {
 
-    // Callback function to get the single todo from the chile(todoinput);
-    
+    const [TodoList, setTodoList] = useState(["learning react"]);
 
-    [TodoList, setTodoList] = useState([]);
+    // Callback function to get the single todo from the chile(todoinput);
+    const Alltodos = ((newtodo) => {
+        console.log(newtodo);
+        setTodoList([...TodoList,newtodo]);
+    });
+
 
   return (
     <div>
-        <TodoInput/>
-
+        <TodoInput Alltodos={Alltodos}/>
+        {TodoList.map( (e)=> <div>{e}</div> )}
     </div>
   )
 }
 
-export default Todos
+export default Todos;
+
+
+// - todoinput is a child of todo -> so we now have to take all the elements
+// from the child and store in the parent usestate(todolist); okay!
