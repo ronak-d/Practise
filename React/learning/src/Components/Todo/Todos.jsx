@@ -8,15 +8,26 @@ const Todos = () => {
 
     // Callback function to get the single todo from the chile(todoinput);
     const Alltodos = ((newtodo) => {
-        console.log(newtodo);
-        setTodoList([...TodoList,newtodo]);
+
+        // what iam ding here with payload is modifying  the newtodo
+        // by making a default status as a false = not done 
+
+        const payload = {
+            title:newtodo,
+            status:false
+        }
+
+        console.log(payload);
+
+        // instead of passing new todo we need to pass an payload with every task not done;
+        setTodoList([...TodoList,payload]);
     });
 
 
   return (
     <div>
         <TodoInput Alltodos={Alltodos}/>
-        
+
         {TodoList.map( (e)=> 
             <TododItem todo={e}/>
         )}
