@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import TododItem from './TododItem';
 import TodoInput from './TodoInput'
 
 const Todos = () => {
@@ -15,7 +16,10 @@ const Todos = () => {
   return (
     <div>
         <TodoInput Alltodos={Alltodos}/>
-        {TodoList.map( (e)=> <div>{e}</div> )}
+        
+        {TodoList.map( (e)=> 
+            <TododItem todo={e}/>
+        )}
     </div>
   )
 }
