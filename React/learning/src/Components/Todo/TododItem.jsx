@@ -1,11 +1,11 @@
 import React from 'react'
 
 // todo has a payload as objects
-const TododItem = ({todo}) => {
+const TododItem = ({todo,handleToggle}) => {
   return (
         <div>
-            {todo.title} - {todo.status? "Done": "Not Done"}
-            <button>Toggle</button>
+            {todo.id} - {todo.title} - {todo.status? "Done": "Not Done"}
+            <button onClick={() => handleToggle(todo.id)}>Toggle</button>
         </div>
   )
 }

@@ -15,8 +15,8 @@ const Todos = () => {
         const payload = {
             title:newtodo,
             status:false,
-            id:nanoid(5) // means used 5 letter random id to found particular elemnt to perform any operation.
-        }
+            id:TodoList.length, // means used 5 letter random id to found particular elemnt to perform any operation.
+        };
 
         console.log(payload);
 
@@ -25,12 +25,25 @@ const Todos = () => {
     });
 
 
+    // find the todo ID toogle to true and get new array , set it again
+    const handleToggle = (id) =>{
+        console.log(id);
+         
+        setTodoList([
+            ...TodoList.map((e)=> (e.id === id ? {...e, status: !e.status} : e))
+            // all elments     => id === id
+            // if true => {return element (task) + its ID + while changing true to Status};
+            // false => return element as a whole properties
+        ])
+    }
+
+
   return (
     <div>
         <TodoInput Alltodos={Alltodos}/>
 
         {TodoList.map( (e)=> 
-            <TododItem todo={e}/> // this todo={e} has {title:learning react, status:false}
+            <TododItem handleToggle={handleToggle} todo={e}/> // this todo={e} has {title:learning react, status:false}
         )}
     </div>
   )
