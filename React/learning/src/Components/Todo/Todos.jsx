@@ -43,7 +43,7 @@ const Todos = () => {
         <TodoInput Alltodos={Alltodos}/>
 
         {TodoList.map( (e)=> 
-            <TododItem handleToggle={handleToggle} todo={e}/> // this todo={e} has {title:learning react, status:false}
+            <TododItem handleToggle={handleToggle} todo={e}/> // this todo={e} has payload = {title:learning react, status:false, Id:length}
         )}
     </div>
   )
