@@ -14,7 +14,7 @@ function App() {
       {/* <Nav/>  */}
       {/* <Counter/> */}
       {/* <Child callbackFun={receiver}/> */}
-      <Todos/>
+      {/* <Todos/> */}
     </div>
   );
 }
