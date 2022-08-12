@@ -2,7 +2,7 @@ import React from "react";
 import Counter from "./Components/Counter/Counter";
 import Nav from "./Components/Nav/Nav"
 import Todos from "./Components/Todo/Todos";
-
+import Example from "./Components/LifecycleM/Example"
 function App() {
 
   function receiver(value) {
@@ -15,6 +15,7 @@ function App() {
       {/* <Counter/> */}
       {/* <Child callbackFun={receiver}/> */}
       {/* <Todos/> */}
+      <Example/>
     </div>
   );
 }
