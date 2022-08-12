@@ -2,7 +2,7 @@ import React from "react";
 import Counter from "./Components/Counter/Counter";
 import Nav from "./Components/Nav/Nav"
 import Todos from "./Components/Todo/Todos";
-// 40 mins 4 
+
 function App() {
 
   function receiver(value) {
