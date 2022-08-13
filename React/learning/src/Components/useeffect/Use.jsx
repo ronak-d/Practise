@@ -2,16 +2,24 @@ import React, { useEffect } from 'react'
 
 const Use = () => {
 
-    console.log("Before")
+    const users = async() => {
+        try {
+            let data = await fetch("http://localhost:3000/users");
+            let result = data.json();
+            console.log(result);
+        } 
+        catch (error) {
+            console.error(error);
+        }
+    }
 
+    console.log("Before")
     useEffect(() => {
         console.log("one")
     })
-
     useEffect(() => {
         console.log("two")
     })
-
     console.log("after useEffect")
 
   return (
