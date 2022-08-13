@@ -3,6 +3,7 @@ import Counter from "./Components/Counter/Counter";
 import Nav from "./Components/Nav/Nav"
 import Todos from "./Components/Todo/Todos";
 import Example from "./Components/LifecycleM/Example"
+import Use from "./Components/useeffect/Use";
 function App() {
 
   function receiver(value) {
@@ -16,6 +17,7 @@ function App() {
       {/* <Child callbackFun={receiver}/> */}
       {/* <Todos/> */}
       {/* <Example/> */}
+      <Use/>
     </div>
   );
 }

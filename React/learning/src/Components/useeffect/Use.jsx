@@ -6,4 +6,4 @@ const Use = () => {
   )
 }
 
-export default Use
+export default Use;
