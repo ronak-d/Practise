@@ -15,7 +15,7 @@ function App() {
       {/* <Counter/> */}
       {/* <Child callbackFun={receiver}/> */}
       {/* <Todos/> */}
-      <Example/>
+      {/* <Example/> */}
     </div>
   );
 }
