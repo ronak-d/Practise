@@ -1,19 +1,19 @@
 import React, { useEffect } from 'react'
 
-const Use = () => {
+// const Use = () => {
 
-    const users = async() => {
-        try {
-            let data = await fetch("http://localhost:3000/users");
-            let result = await data.json();
-            console.log(result);
-        } 
-        catch (error) {
-            console.error(error);
-        }
-    }
+//     const users = async() => {
+//         try {
+//             let data = await fetch("http://localhost:3000/users");
+//             let result = await data.json();
+//             console.log(result);
+//         } 
+//         catch (error) {
+//             console.error(error);
+//         }
+//     }
 
-    Use()
+//     Use()
 
     // console.log("Before")
     // useEffect(() => {
