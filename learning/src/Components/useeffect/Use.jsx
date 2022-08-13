@@ -1,37 +1,35 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
-// const Use = () => {
+const Use = () => {
 
-//     const users = async() => {
-//         try {
-//             let data = await fetch("http://localhost:3000/users");
-//             let result = await data.json();
-//             console.log(result);
-//         } 
-//         catch (error) {
-//             console.error(error);
-//         }
-//     }
+    const [showusers, setShowusers] = useState([]);
 
-//     Use()
+    // useffect on Mounting => works one time only;
+    // both ways are working .then also and await one also.
+    useEffect(() =>{
+        async function getUsers(){
+            // const data = await fetch("http://localhost:3000/users").then( (d) =>
+            //     d.json() 
+            // );
 
-    // console.log("Before")
-    // useEffect(() => {
-    //     console.log("one")
-    // })
-    // useEffect(() => {
-    //     console.log("two")
-    // })
-    // console.log("after useEffect")
+            const data = await fetch("http://localhost:3000/users");
+            let res = await data.json();
+            setShowusers(res);
+        }
+        getUsers();
+    },[]);
 
-  return (
-    <div>
-        <h1>hello HR</h1>
-    </div>
-  )
+    return (
+        <div>
+            {showusers.map((e)=> (<div>{e.name}</div>) )}
+        </div>
+    )
 }
 
 export default Use;
 
 // remember it - 
 // useEffect are syncronous in nature one gets completed then it will ove froward for the next one.
+
+
+// resume at 1:40
