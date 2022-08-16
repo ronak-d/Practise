@@ -3,7 +3,9 @@ import { useEffect } from 'react';
 
 
 // use of UseEffect;
-// useffcts accepts 2 arguments/parameters.
+// useEffcts accepts 2 arguments/parameters. where 2nd one is optional (dependencies in life cycle methods [] );
+// 
+
 
 
 
