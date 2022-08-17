@@ -10,9 +10,25 @@ import { useEffect,useState } from 'react';
 // if given [state] = an array having state will only render when that state made some changes.
 
 const Learning = () => {
+
+    const [count,setCount] = useState("0");
+    const [multiply,setMultiply] = useState("0");
+
+    let handleCount = (event) =>{
+        setCount(count - event)
+    }
+
+    useEffect(()=>{
+        multiply * count;
+    },[count]);
+
+
   return (
     <div>
-        const [count,setCount] = useState(0)
+        <h1>Count: {count}</h1>
+        <button onClick={() => handleCount(+1)}></button>
+        <button onClick={() => handleCount(-1)}></button>
+        <h1>Multipyer: {multiply}</h1>
     </div>
   )
 }
