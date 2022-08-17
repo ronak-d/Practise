@@ -4,7 +4,9 @@ let x = 100;
 function test(){
 
  console.log(x); //Cannot access 'x' before initialization = block scope;
-
+                 // if below declarations are not performed than the x will be undefined even if the x has been assigned with some value in global scope.
+                 // this happens because of hoisting.
+                 
   let x = i = 10;     // x and i are declaring then assigning to their value;
 //  x = i;                 // i is not defined because declaration part is missing;
 
