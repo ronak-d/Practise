@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 // this to do in the way of fetching with the JSON server (mock server).
 // make this todo with the help of backend and useEffect.
@@ -10,17 +11,22 @@ const Todo = () => {
   const [todo, setTodo] = useState("");
 
   function handleTodo(newtodo){
+    console.log(newtodo);
 
     let payloadTodo = {
       id:todolist.length + 1,
       status:false,
-      name:todo
+      name:newtodo
     }
+    
+    // axios POST request to save todo in the server.
+    axios.post("http://localhost:3000/users",payloadTodo);
+
     setTodolist([...todolist, payloadTodo])
   }
 
   // useEffect(() =>{
-
+  // axios GET request to receive todo from the server.
   // },[])
 
   return (
@@ -31,7 +37,7 @@ const Todo = () => {
       </div>
 
       <div>
-        {todolist.map((e)=><div>{e.id} - {e.name}</div>)}
+        {todolist.map((e)=> <div key={e.id}> {e.id} - {e.name}</div>)}
       </div>
     </>
   )
