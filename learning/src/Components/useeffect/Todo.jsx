@@ -25,9 +25,15 @@ const Todo = () => {
     setTodolist([...todolist, payloadTodo])
   }
 
-  // useEffect(() =>{
+  useEffect(() =>{
   // axios GET request to receive todo from the server.
-  // },[])
+    axios.get("http://localhost:3000/users")
+    .then((response) =>{
+      console.log(response.data);
+      setTodolist(response.data);
+    })
+    
+  },[])
 
   return (
     <>
