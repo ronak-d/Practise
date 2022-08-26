@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
 // this to do in the way of fetching with the JSON server (mock server).
+// make this todo with the help of backend and useEffect.
+// show result with rerender.
 
 const Todo = () => {
 
@@ -13,10 +15,12 @@ const Todo = () => {
       status:false,
       name:todo
     }
-
     setTodolist([...todolist, payloadTodo])
-
   }
+
+  useEffect(() =>{
+
+  },[])
 
   return (
     <>
@@ -26,7 +30,7 @@ const Todo = () => {
       </div>
 
       <div>
-        {todolist.map((e)=>)}
+        {todolist.map((e)=><div>{e.id} - {e.name}</div>)}
       </div>
     </>
   )
