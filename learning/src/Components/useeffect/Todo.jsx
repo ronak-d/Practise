@@ -9,6 +9,7 @@ const Todo = () => {
 
   const [todolist, setTodolist] = useState([]);
   const [todo, setTodo] = useState("");
+  const [page,setPage] = useState(1);
 
   function handleTodo(newtodo){
     console.log(newtodo);
@@ -27,13 +28,15 @@ const Todo = () => {
 
   useEffect(() =>{
   // axios GET request to receive todo from the server.
-    axios.get("http://localhost:3000/users")
+  // http://localhost:3000/users?_page=2&_limit=4
+
+    axios.get(`http://localhost:3000/users?_page=${page}&_limit=5`)
     .then((response) =>{
       console.log(response.data);
       setTodolist(response.data);
     })
     
-  },[])
+  },[page])
 
   return (
     <>
@@ -44,6 +47,11 @@ const Todo = () => {
 
       <div>
         {todolist.map((e)=> <div key={e.id}> {e.id} - {e.name}</div>)}
+      </div>
+
+      <div>
+        <button onClick={() => setPage(page-1)}>prev</button>
+        <button onClick={() => setPage(page+1)}>Next</button>
       </div>
     </>
   )
