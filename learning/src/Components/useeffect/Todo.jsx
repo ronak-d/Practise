@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { nanoid } from 'nanoid'
 
 // this to do in the way of fetching with the JSON server (mock server).
 // make this todo with the help of backend and useEffect.
@@ -15,7 +16,7 @@ const Todo = () => {
     console.log(newtodo);
 
     let payloadTodo = {
-      id:todolist.length + 1,
+      id:nanoid(5),
       status:false,
       name:newtodo
     }
@@ -37,7 +38,7 @@ const Todo = () => {
     axios("http://localhost:3000/users",{     //---
       method: "GET",                          //
       params: {                               //
-        _page: page,                          //                            // 2=> Second way for axios using params
+        _page: page,                          //                            // 2=> Second way for axios using params.
         _limit:5                              //
       }                                       //
     })                                        //---
