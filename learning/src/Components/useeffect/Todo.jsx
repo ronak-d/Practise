@@ -34,13 +34,13 @@ const Todo = () => {
 
     // axios.get(`http://localhost:3000/users?_page=${page}&_limit=5`)      // 1=> this way.
 
-    axios("http://localhost:3000/users",{     //-
+    axios("http://localhost:3000/users",{     //---
       method: "GET",                          //
       params: {                               //
         _page: page,                          //                            // 2=> Second way for axios using params
         _limit:5                              //
       }                                       //
-    })                                        //-
+    })                                        //---
     .then((response) =>{
       setLoading(false);
       console.log(response.data);
