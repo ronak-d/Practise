@@ -1,8 +1,8 @@
 import React from "react";
-import Counter from "./Components/Counter/Counter";
-import Nav from "./Components/Nav/Nav"
-import Todos from "./Components/Todo/Todos";
-import Example from "./Components/LifecycleM/Example"
+// import Counter from "./Components/Counter/Counter";
+// import Nav from "./Components/Nav/Nav"
+// import Todos from "./Components/Todo/Todos";
+// import Example from "./Components/LifecycleM/Example"/
 // import Use from "./Components/useeffect/Use";
 import Todo from "./Components/Useeffect/Todo";
 function App() {

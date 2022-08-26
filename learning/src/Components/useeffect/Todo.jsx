@@ -9,7 +9,8 @@ const Todo = () => {
   const [todolist, setTodolist] = useState([]);
   const [todo, setTodo] = useState("");
 
-  function handleTodo(todo){
+  function handleTodo(newtodo){
+
     let payloadTodo = {
       id:todolist.length + 1,
       status:false,
@@ -25,7 +26,7 @@ const Todo = () => {
   return (
     <>
       <div>
-        <input type="text" onchange={(e) => setTodo(e.target.value)}/>     
+        <input type="text" onChange={(e) => setTodo(e.target.value)}/>     
         <button onClick={() => handleTodo(todo)}>Add</button>
       </div>
 
