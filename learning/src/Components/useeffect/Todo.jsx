@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 // this to do in the way of fetching with the JSON server (mock server).
 // make this todo with the help of backend and useEffect.
@@ -18,14 +18,14 @@ const Todo = () => {
     setTodolist([...todolist, payloadTodo])
   }
 
-  useEffect(() =>{
+  // useEffect(() =>{
 
-  },[])
+  // },[])
 
   return (
     <>
       <div>
-        <input type="text" value={value} onchange={(e) => setTodo(e.target.value)}/>     
+        <input type="text" onchange={(e) => setTodo(e.target.value)}/>     
         <button onClick={() => handleTodo(todo)}>Add</button>
       </div>
 
