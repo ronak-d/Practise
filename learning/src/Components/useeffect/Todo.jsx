@@ -33,7 +33,7 @@ const Todo = () => {
     setLoading(true);
 
     // axios.get(`http://localhost:3000/users?_page=${page}&_limit=5`)      // 1=> this way.
-    
+
     axios("http://localhost:3000/users",{     //-
       method: "GET",                          //
       params: {                               //
@@ -55,12 +55,12 @@ const Todo = () => {
 
   return (
     <>
-      {loading && <div>Loading... Please Wait</div>}
-
       <div>
         <input type="text" onChange={(e) => setTodo(e.target.value)}/>     
         <button onClick={() => handleTodo(todo)}>Add</button>
       </div>
+
+      {loading && <div>Loading... Please Wait</div>}
 
       <div>
         {todolist.map((e)=> <div key={e.id}> {e.id} - {e.name}</div>)}
