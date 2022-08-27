@@ -13,4 +13,6 @@ const CleanUpFunction = () => {
   )
 }
 
-export default CleanUpFunction
+export default CleanUpFunction;
+
+// 1:40
