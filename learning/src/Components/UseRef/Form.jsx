@@ -10,13 +10,15 @@ const Form = () => {
     })
 
     function handleChange(event){
+        // we can also destructure it like (event has (id can be username/age) form event.target).
+        // const {id,value} = event.target -> 1 method.
 
         setFormData({
             ...formData,
-            [event.target.id] : event.target.value // this lines means
-            // 
+            // [id] : value     -> 1 method.
+            [event.target.id] : event.target.value // 2 -> method.
+            // formData.id(can be username/age) = to the value of username/age.
         })
-
     }
 
   return (
@@ -27,7 +29,7 @@ const Form = () => {
 
         <input onChange={handleChange} id="username" type="text" placeholder="Enter Username" />
         <input onChange={handleChange} id="age" type="number"placeholder="Enter age" />
-        <button onclick={()=>handleChange}>save</button>
+        <button onClick={()=>handleChange}>save</button>
     </div>
   )
 }
