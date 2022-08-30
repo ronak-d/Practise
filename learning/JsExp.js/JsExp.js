@@ -8,7 +8,7 @@ function test(){
                  // this happens because of hoisting.
                  
   let x = i = 10;     // x and i are declaring then assigning to their value;
-//  x = i;                 // i is not defined because declaration part is missing;
+//  x = i;                 // i is not defined because declaration part is missing.
 
  console.log(`x is ${x}`);   // 10
  console.log(`i is ${i}`);   // 10
