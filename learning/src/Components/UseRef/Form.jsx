@@ -21,19 +21,23 @@ const Form = () => {
         })
     }
 
+    function handleSubmit(event) {
+        event.preventDefault();
+        console.log(formData);
+    }
+
   return (
 
     <div>
         {/* WE ARE GIVING ID IN INPUT ELEMENT BEACUSE TO IDENTIFY THE TYPE OF INPUT THE VALUE NEEDS TO BE
             OVERIDDEN OR VALUES NEED TO BE OVERWRITTEN*/}
-
+    <form onSubmit={handleSubmit}>
         <input onChange={handleChange} id="username" type="text" placeholder="Enter Username" />
         <input onChange={handleChange} id="age" type="number"placeholder="Enter age" />
         <button onClick={()=>handleChange}>save</button>
+    </form>
     </div>
   )
 }
 
 export default Form;
-
-// 1:06
