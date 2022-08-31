@@ -23,7 +23,7 @@ function App() {
       {/* <Example/> */}
       {/* <Use/> */}
       {/* <Todo/> */}
-      {/* <Form/> */}
+      <Form/>
       <ShowRefUses/>
     </div>
   );
