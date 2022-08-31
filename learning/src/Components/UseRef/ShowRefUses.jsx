@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const ShowRefUses = () => {
 
@@ -13,9 +13,17 @@ const ShowRefUses = () => {
 
     const handleCalcln =(e) =>{
         // let calcln = counter * 2;
-        calclnRef.current = calclnRef.current * 2;
+        console.log("came here")
+
+        calclnRef.current = calclnRef.current * e;
         console.log(calclnRef);
     }
+    // useEffect(() => {
+    //     calclnRef.current = calclnRef.current * 2;
+    //     console.log(calclnRef);
+    // },[handleCalcln])
+
+
 
   return (
     <div>
@@ -25,7 +33,7 @@ const ShowRefUses = () => {
 
         <br />
         {/* this  will be showing 2 only that is storerd in the global variable as calcln then it will not render and show through VDOM */}
-        <h3>Double calcln  : {calclnRef.current} : <button onClick={handleCalcln}>check calcn</button> </h3>
+        <h3>Double calcln  : {calclnRef.current} : <button onClick={()=>handleCalcln(2)}>check calcn</button> </h3>
     </div>
   )
 }
