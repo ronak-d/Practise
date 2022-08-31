@@ -5,7 +5,9 @@ import React from "react";
 // import Example from "./Components/LifecycleM/Example"/
 // import Use from "./Components/useeffect/Use";
 // import Todo from "./Components/Useeffect/Todo";
-// import Form from "./Components/UseRef/Form";
+import Form from "./Components/UseRef/Form";
+import ShowRefUses from "./Components/UseRef/ShowRefUses";
+
 function App() {
 
   function receiver(value) {
@@ -21,7 +23,8 @@ function App() {
       {/* <Example/> */}
       {/* <Use/> */}
       {/* <Todo/> */}
-      <Form/>
+      {/* <Form/> */}
+      <ShowRefUses/>
     </div>
   );
 }
