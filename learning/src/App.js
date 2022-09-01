@@ -1,13 +1,14 @@
 import React from "react";
 import CApi from "./Components/ContextApi/CApi";
+import MainWrapper from "./Components/ContextApi/MainWrapper";
 // import Counter from "./Components/Counter/Counter";
 // import Nav from "./Components/Nav/Nav"
 // import Todos from "./Components/Todo/Todos";
 // import Example from "./Components/LifecycleM/Example"/
 // import Use from "./Components/useeffect/Use";
 // import Todo from "./Components/Useeffect/Todo";
-import Form from "./Components/UseRef/Form";
-import ShowRefUses from "./Components/UseRef/ShowRefUses";
+// import Form from "./Components/UseRef/Form";
+// import ShowRefUses from "./Components/UseRef/ShowRefUses";
 
 function App() {
 
@@ -26,7 +27,8 @@ function App() {
       {/* <Todo/> */}
       {/* <Form/> */}
       {/* <ShowRefUses/> */}
-      <CApi/>
+      {/* <CApi/> */}
+      <MainWrapper />
     </div>
   );
 }

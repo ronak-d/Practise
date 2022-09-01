@@ -25,3 +25,11 @@ export default CartContextProvider;
 
 // CartContext.Provider => provides th e value and can have a Single prop which can contain any kind of value.
 // CartContext.Provider is a react component comes from -> createContext
+
+// children has to be static with no spell or case mistakes in it.
+
+
+
+{/* <CartContext.Provider value={0}>  // we can only pass single prop.
+{children}                            // we are rendering children.
+</CartContext.Provider> */}
