@@ -19,3 +19,6 @@ export default CApi;
 
 // IMPORTANT-
 // Goal => is to click and increase the cart without passing any props.
+
+// intialization
+// 
