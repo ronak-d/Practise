@@ -1,6 +1,11 @@
 import React from 'react'
+import {CartContext} from './MainContext/CartContext';
+import {useContext} from 'react';
 
 const Cart = () => {
+
+  const {handleChange} = useContext(CartContext)
+
   return (
     <div style={{
     color: 'white',
@@ -11,7 +16,7 @@ const Cart = () => {
     justifyContent: 'flex-start',
     padding: '10px'
     }}>
-      <button>Add to Cart</button>
+      <button onClick={()=>handleChange(1)}>Add to Cart</button>
     </div>
   )
 }

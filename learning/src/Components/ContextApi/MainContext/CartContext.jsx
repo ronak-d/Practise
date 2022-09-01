@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {createContext} from 'react';
 import CApi from '../CApi';
 
 // maintaining the context function for the cart.
-const CartContext = createContext();
+export const CartContext = createContext();
 
 const CartContextProvider = ({children}) => {
+  const [cartvalue, setcartvalue] = useState(0);
+
+  function handleChange(inc){
+    setcartvalue(cartvalue+inc);
+  }
+
+  console.log(children)
   return (
-    <CartContext.Provider value={0}>
+    <CartContext.Provider value={{cartvalue, handleChange }} >  
         {children}
     </CartContext.Provider>
   )
@@ -33,3 +40,5 @@ export default CartContextProvider;
 {/* <CartContext.Provider value={0}>  // we can only pass single prop.
 {children}                            // we are rendering children.
 </CartContext.Provider> */}
+
+// value={{cartvalue, handleChange }}   -> destructure in object imp pass an single prop only.
