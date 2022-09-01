@@ -1,4 +1,5 @@
 import React from "react";
+import CApi from "./Components/ContextApi/CApi";
 // import Counter from "./Components/Counter/Counter";
 // import Nav from "./Components/Nav/Nav"
 // import Todos from "./Components/Todo/Todos";
@@ -23,8 +24,9 @@ function App() {
       {/* <Example/> */}
       {/* <Use/> */}
       {/* <Todo/> */}
-      <Form/>
-      <ShowRefUses/>
+      {/* <Form/> */}
+      {/* <ShowRefUses/> */}
+      <CApi/>
     </div>
   );
 }
