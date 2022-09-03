@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from "react-router-dom";
 // import Counter from "./Components/Counter/Counter";
 // import Nav from "./Components/Nav/Nav"
 // import Todos from "./Components/Todo/Todos";
@@ -9,6 +10,7 @@ import React from "react";
 // import ShowRefUses from "./Components/UseRef/ShowRefUses";
 // import CApi from "./Components/ContextApi/CApi";
 // import MainWrapper from "./Components/ContextApi/MainWrapper";
+import RoutesDemo from "./Components/Routers/Route";
 
 function App() {
 
@@ -29,6 +31,7 @@ function App() {
       {/* <ShowRefUses/> */}
       {/* <CApi/> */}
       {/* <MainWrapper /> */}
+      <RoutesDemo/>
     </div>
   );
 }
