@@ -2,15 +2,19 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import About from './About'
 import Home from './Home'
-import RoutesDemo from './Route';
+import AppRoutes from './AppRoute';
+import Navbar from './Navbar';
 
 const AllRoutes = () => {
   return (
+    <>
+    <Navbar/>
     <Routes>
-        <Route path="/" elements={<RoutesDemo/>}/>
-        <Route path="/About" elements={<About/>}/>
-        <Route path="/Home" elements={<Home/>}/>
+        <Route path="/" elements={<AppRoutes/>}/>
+        <Route path="/about" elements={<About/>}/>
+        <Route path="/home" elements={<Home/>}/>
     </Routes>
+    </>
   )
 }
 

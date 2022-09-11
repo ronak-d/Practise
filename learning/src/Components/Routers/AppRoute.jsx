@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from './Navbar';
 
-const RoutesDemo = () => {
+const AppRoutes = () => {
   return (
+    <>
+        <Navbar/>
     <div>
         <h3>1st Install react-router-dom library from react.</h3>
         <hr />
@@ -12,10 +15,12 @@ const RoutesDemo = () => {
         <h3>Maintain Routes wrapper with each Route in it. With all closing tags.</h3>
         <hr />
         <h3>Give Link to Navbar to navigate to ceratin page.</h3>
+        <hr />
     </div>
+    </>
   )
 }
 
-export default RoutesDemo;
+export default AppRoutes;
 
 // 40 mins lec 1
