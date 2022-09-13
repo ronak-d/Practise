@@ -3,18 +3,15 @@ import { Route, Routes } from 'react-router-dom';
 import About from './About'
 import Home from './Home'
 import AppRoutes from './AppRoute';
-import Navbar from './Navbar';
 
 const AllRoutes = () => {
+  
   return (
-    <>
     <Routes>
         <Route path="/" elements={<AppRoutes/>}/>
         <Route path="/about" elements={<About/>}/>
         <Route path="/home" elements={<Home/>}/>
     </Routes>
-    <Navbar/>
-    </>
   )
 }
 
