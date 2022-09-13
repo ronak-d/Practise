@@ -23,4 +23,4 @@ export default AllRoutes
 
 // Routes is a wrapper where each route has to be defined. 
 // path = triggers element 
-// element + Each Route has to be closed before.
+// element + Each Route has to be closed before

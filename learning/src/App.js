@@ -1,5 +1,5 @@
 import React from "react";
-import AppRoutes from "./Components/Routers/AppRoute";
+// import AppRoutes from "./Components/Routers/AppRoute";
 // import Counter from "./Components/Counter/Counter";
 // import Nav from "./Components/Nav/Nav"
 // import Todos from "./Components/Todo/Todos";
@@ -30,7 +30,7 @@ function App() {
       {/* <ShowRefUses/> */}
       {/* <CApi/> */}
       {/* <MainWrapper /> */}
-      <AppRoutes/>
+      {/* <AppRoutes/> */}
     </div>
   );
 }
