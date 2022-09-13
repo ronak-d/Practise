@@ -8,12 +8,12 @@ import Navbar from './Navbar';
 const AllRoutes = () => {
   return (
     <>
-    <Navbar/>
     <Routes>
         <Route path="/" elements={<AppRoutes/>}/>
         <Route path="/about" elements={<About/>}/>
         <Route path="/home" elements={<Home/>}/>
     </Routes>
+    <Navbar/>
     </>
   )
 }
