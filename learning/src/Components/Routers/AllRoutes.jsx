@@ -18,7 +18,7 @@ const AllRoutes = () => {
   )
 }
 
-export default AllRoutes
+export default AllRoutes;
 
 
 // Routes is a wrapper where each route has to be defined. 
