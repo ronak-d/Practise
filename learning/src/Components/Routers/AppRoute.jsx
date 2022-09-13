@@ -1,10 +1,8 @@
-import React from 'react'
-import Navbar from './Navbar';
+import React from 'react';
 
 const AppRoutes = () => {
   return (
     <>
-        <Navbar/>
     <div>
         <h3>1st Install react-router-dom library from react.</h3>
         <hr />
