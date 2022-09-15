@@ -1,5 +1,5 @@
 import React from "react";
-import AllRoutes from "./Components/Routers/AllRoutes";
+// import AllRoutes from "./Components/Routers/AllRoutes";
 // import Counter from "./Components/Counter/Counter";
 // import Nav from "./Components/Nav/Nav"
 // import Todos from "./Components/Todo/Todos";
@@ -30,7 +30,7 @@ function App() {
       {/* <ShowRefUses/> */}
       {/* <CApi/> */}
       {/* <MainWrapper /> */}
-      <AllRoutes/>
+      {/* <AllRoutes/> */}
     </div>
   );
 }
