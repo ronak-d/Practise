@@ -24,10 +24,13 @@ const Navbar = () => {
       <Link to='/Homey'>Homey </Link>
       <Link to='/About'>About</Link>
       <Link to='/UsersList'>Users</Link>
-      
+
     </div>
     </>
   )
 }
 
 export default Navbar
+
+// IMP.
+// link to and routing path has to be same then only it will trigger that route element.
