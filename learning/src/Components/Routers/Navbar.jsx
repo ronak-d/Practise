@@ -21,6 +21,7 @@ const Navbar = () => {
       <ul><Link to='/'>Routes Info </Link></ul>
       <ul><Link to='/Homey'>Homey </Link></ul>
       <ul><Link to='/About'>About</Link></ul>
+      <ul><Link to='/UsersList'>Users</Link></ul>
     </div>
     </>
   )
