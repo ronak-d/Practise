@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './route.module.css'
 
 
 // we can do it by mapping also.
@@ -17,11 +18,13 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
-    <div>
-      <ul><Link to='/'>Routes Info </Link></ul>
-      <ul><Link to='/Homey'>Homey </Link></ul>
-      <ul><Link to='/About'>About</Link></ul>
-      <ul><Link to='/UsersList'>Users</Link></ul>
+    <div className={styles.navcss}>
+
+      <Link to='/'>Routes Info </Link>
+      <Link to='/Homey'>Homey </Link>
+      <Link to='/About'>About</Link>
+      <Link to='/UsersList'>Users</Link>
+      
     </div>
     </>
   )
