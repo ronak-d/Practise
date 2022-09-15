@@ -22,7 +22,7 @@ const AllRoutes = () => {
 }
 
 export default AllRoutes;
-// continue at 1:36 mins.
+// continue at 1:36 mins
 // Routes is a wrapper where each route has to be defined. 
 // path = triggers element 
 // element + Each Route has to be closed before
