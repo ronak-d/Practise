@@ -5,6 +5,7 @@ import Homey from './Home'
 import AppRoutes from './AppRoute';
 import Navbar from './Navbar';
 import UsersList from './UsersList';
+import UserDetails from './UserDetails';
 
 const AllRoutes = () => {
 
@@ -16,6 +17,7 @@ const AllRoutes = () => {
         <Route path="/About" element={<About/>}/>
         <Route path="/Homey" element={<Homey/>}/>
         <Route path="/UsersList" element={<UsersList/>}/>
+        <Route path="/UsersList/:id" element={<UserDetails/>}/>
     </Routes>
     </>
   )

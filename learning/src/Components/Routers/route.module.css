@@ -8,3 +8,10 @@
     display: flex;
     justify-content: space-between;
 }
+.userlist{
+    /* display: flex; */
+    border: 2px solid black;
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
