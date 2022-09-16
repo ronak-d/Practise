@@ -18,10 +18,11 @@ const UsersList = () => {
   return (
     <div className={styles.userlist}>
       <h3>UsersList</h3>
+
       {users.map((user) =>(
         <>
-        <img src={user.avatar} alt="" />
-        <p key={user.id}> {user.id} {user.first_name} {user.last_name}</p>
+            <img src={user.avatar} alt="" />
+            <p key={user.id}> {user.id} {user.first_name} {user.last_name}</p>
         </>
       ))}
     </div>
