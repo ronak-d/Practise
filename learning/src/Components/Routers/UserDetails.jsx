@@ -5,8 +5,8 @@ const UserDetails = () => {
   const {mail,first_name} = useParams();
 
   // this hook is taking prop value automatically from link tag in mapping function of userlist
-  // 
-  
+  // then destructure it and use them in curly brackets as they are in form of Js.
+
   return (
     <>
     <h1>{first_name}</h1>
