@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import styles from './route.module.css'
+import { Link } from 'react-router-dom';
 
 const UsersList = () => {
 
@@ -21,8 +22,10 @@ const UsersList = () => {
 
       {users.map((user) =>(
         <>
+          <Link to={`/UsersList/${user.email}/${user.id}`}>
             <img src={user.avatar} alt="" />
             <p key={user.id}> {user.id} {user.first_name} {user.last_name}</p>
+          </Link>
         </>
       ))}
     </div>

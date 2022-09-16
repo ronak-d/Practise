@@ -18,8 +18,9 @@ const AllRoutes = () => {
         <Route path="/About" element={<About/>}/>
         <Route path="/Homey" element={<Homey/>}/>
         <Route path="/UsersList" element={<UsersList/>}/>
-        <Route path="/UsersList/:mail" element={<UserDetails/>}/>
+        <Route path="/UsersList/:mail/:id" element={<UserDetails/>}/>
     </Routes>
+    {/* use :mail/:id for dynamic routing */}
     </>
   )
 }
