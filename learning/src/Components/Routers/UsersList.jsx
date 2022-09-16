@@ -7,18 +7,19 @@ const UsersList = () => {
 
   useEffect(() => {
     axios.get('https://reqres.in/api/users')
-    .then((response) => setUsers(response.data.data))
+    .then(({data}) =>{
+      console.log(data.data);
+      setUsers(data.data)
+    })
     .catch((error) => console.error(error));
   },[]);
   
-  console.log(users);
   return (
     <>
       <h3>UsersList</h3>
-      
-      {users.map((user) =>{
-        <p> {users.id}. {users.first_name}</p>
-      })}
+      {users.map((user) =>(
+        <p key={user.id}> {user.id} {user.first_name} {user.last_name}</p>
+      ))}
     </>
   )
 }
