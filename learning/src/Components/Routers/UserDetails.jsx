@@ -2,11 +2,15 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 
 const UserDetails = () => {
-  const {mail} = useParams();
+  const {mail,first_name} = useParams();
+
+  // this hook is taking prop value automatically from link tag in mapping function of userlist
+  // 
+  
   return (
     <>
-    <div>UserDetails</div>
-    <h1>hello</h1>
+    <h1>{first_name}</h1>
+    <h4>Email : {mail}</h4>
     </>
   )
 }
