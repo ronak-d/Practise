@@ -19,7 +19,7 @@ const AllRoutes = () => {
         <Route path="/Homey" element={<Homey/>}/>
         <Route path="/UsersList" element={<UsersList/>}/>
         <Route path="/UsersList/:mail/:first_name" element={<UserDetails/>}/>
-    </Routes>
+    </Routes>;
     {/* use :mail/:id for dynamic routing */}
     </>
   )
