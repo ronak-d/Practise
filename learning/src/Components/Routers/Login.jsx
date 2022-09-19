@@ -15,3 +15,10 @@ export default Login;
 
 
 // using reqres.in user email and password.
+// POST Request
+// /api/login
+
+// {
+//     "email": "eve.holt@reqres.in",
+//     "password": "cityslicka"
+// }
