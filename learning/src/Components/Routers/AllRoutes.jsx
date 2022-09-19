@@ -6,6 +6,7 @@ import AppRoutes from './AppRoute';
 import Navbar from './Navbar';
 import UsersList from './UsersList';
 import UserDetails from './UserDetails';
+import Login from './Login';
 
 const AllRoutes = () => {
 
@@ -18,6 +19,7 @@ const AllRoutes = () => {
         <Route path="/About" element={<About/>}/>
         <Route path="/Homey" element={<Homey/>}/>
         <Route path="/UsersList" element={<UsersList/>}/>
+        <Route path="/Login" element={<Login/>}/>
         <Route path="/UsersList/:mail/:first_name" element={<UserDetails/>}/>
     </Routes>;
     {/* use :mail/:id for dynamic routing */}
