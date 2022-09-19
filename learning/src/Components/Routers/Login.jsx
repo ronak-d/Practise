@@ -15,6 +15,7 @@ export default Login;
 
 
 // using reqres.in user email and password.
+
 // POST Request
 // /api/login
 
@@ -22,3 +23,6 @@ export default Login;
 //     "email": "eve.holt@reqres.in",
 //     "password": "cityslicka"
 // }
+
+// response 200
+//  "token": "QpwL5tke4Pnpja7X4"
