@@ -19,8 +19,11 @@ const AllRoutes = () => {
         <Route path="/About" element={<About/>}/>
         <Route path="/Homey" element={<Homey/>}/>
         <Route path="/UsersList" element={<UsersList/>}/>
+
+        {/* maintain private Component if user not logged in navigate them to login page */}
         <Route path="/Login" element={<Login/>}/>
-        
+        {/* if user not logged in going to login page */}
+
         <Route path="/UsersList/:mail/:first_name" element={<UserDetails/>}/>
     </Routes>;
     {/* use :mail/:id for dynamic routing */}
